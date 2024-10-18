@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../src/output.css"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- <link rel="stylesheet" href="../src/output.css"/> -->
+</head>
+<body> 
+    <div class="bg-black fixed top-0 w-full z-50 p-4">
+        <div class="">
+            <h1 class="text-4xl font-tailfont text-white mt-2 flex justify-center">
+                Rita k stones
+            </h1>
+            
+            <div class="flex items-center space-x-4">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-alt-fill text-white" viewBox="0 0 16 16">
+                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
+                </svg>
+                <h2 class="text-lg text-white">Our Locations</h2>
+            </div>
+            <a class="cart-link header-link" href="checkout.html">
+                <img class="cart-icon" src="/images/jj/cart-icon.png">
+                <!-- <div class="cart-quantity js-cart-quantity">3</div> -->
+                 <div class="cart-quantity">3</div>
+                <div class="cart-text">Cart</div>
+              </a>
+        </div>
+    
+        <div class="flex justify-center space-x-6 mt-2 text-white real">
+            
+            <div class="flex justify-center space-x-6 mt-2 text-white">
+                <!-- Dropdown for "Options" -->
+                <div class="relative inline-block text-left group">
+                    <span id="optionsDropdownToggle" class="inline-flex justify-center rounded-md text-sm font-medium  hover:underline cursor-pointer">
+                        MEN'S
+                    </span>
+                    <div id="optionsDropdownMenu" class="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-300 ease-in-out">
+                        <div class="py-1" role="menu" aria-orientation="vertical">
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">shop all</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">best under $1500</a>
+                            
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">pendant</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">necklace</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">pendant</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">pendant</a>
+                            <form method="POST" action="#">
+                                <button type="submit" class="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Sign out</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Other items with dropdowns -->
+                <div class="relative inline-block text-left group">
+                    <span id="womenDropdownToggle" class="inline-flex justify-center rounded-md text-sm font-medium  hover:underline cursor-pointer">
+                        WOMEN
+                    </span>
+                    <div id="womenDropdownMenu" class="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-300 ease-in-out">
+                        <div class="py-1" role="menu" aria-orientation="vertical">
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">WOMEN ITEM 1</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">WOMEN ITEM 2</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="relative inline-block text-left group">
+                    <span id="menDropdownToggle" class="inline-flex justify-center rounded-md text-sm font-medium  hover:underline cursor-pointer">
+                        WATCHES
+                    </span>
+                    <div id="menDropdownMenu" class="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-300 ease-in-out">
+                        <div class="py-1" role="menu" aria-orientation="vertical">
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">MEN ITEM 1</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">MEN ITEM 2</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="relative inline-block text-left group">
+                    <span id="engagementRingDropdownToggle" class="inline-flex justify-center rounded-md text-sm font-medium  hover:underline cursor-pointer">
+                        ENGAGEMENT RING
+                    </span>
+                    <div id="engagementRingDropdownMenu" class="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-300 ease-in-out">
+                        <div class="py-1" role="menu" aria-orientation="vertical">
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">ENGAGEMENT ITEM 1</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">ENGAGEMENT ITEM 2</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Continue adding other items similarly -->
+                <div class="relative inline-block text-left group">
+                    <span id="watchesDropdownToggle" class="inline-flex justify-center rounded-md text-sm font-medium  hover:underline cursor-pointer">
+                        WATCHES
+                    </span>
+                    <div id="watchesDropdownMenu" class="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-300 ease-in-out">
+                        <div class="py-1" role="menu" aria-orientation="vertical">
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">WATCH ITEM 1</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">WATCH ITEM 2</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative inline-block text-left group">
+                    <span id="watchesDropdownToggle" class="inline-flex justify-center rounded-md text-sm font-medium  hover:underline cursor-pointer">
+                        WATCHES
+                    </span>
+                    <div id="watchesDropdownMenu" class="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-300 ease-in-out">
+                        <div class="py-1" role="menu" aria-orientation="vertical">
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">WATCH ITEM 1</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">WATCH ITEM 2</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative inline-block text-left group">
+                    <span id="watchesDropdownToggle" class="inline-flex justify-center rounded-md text-sm font-medium  hover:underline cursor-pointer">
+                        WATCHES
+                    </span>
+                    <div id="watchesDropdownMenu" class="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-300 ease-in-out">
+                        <div class="py-1" role="menu" aria-orientation="vertical">
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">WATCH ITEM 1</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">WATCH ITEM 2</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative inline-block text-left group">
+                    <span id="watchesDropdownToggle" class="inline-flex justify-center rounded-md text-sm font-medium  hover:underline cursor-pointer">
+                        WATCHES
+                    </span>
+                    <div id="watchesDropdownMenu" class="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-300 ease-in-out">
+                        <div class="py-1" role="menu" aria-orientation="vertical">
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">WATCH ITEM 1</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">WATCH ITEM 2</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative inline-block text-left group">
+                    <span id="watchesDropdownToggle" class="inline-flex justify-center rounded-md text-sm font-medium  hover:underline cursor-pointer">
+                        WATCHES
+                    </span>
+                    <div id="watchesDropdownMenu" class="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-300 ease-in-out">
+                        <div class="py-1" role="menu" aria-orientation="vertical">
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">WATCH ITEM 1</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">WATCH ITEM 2</a>
+                        </div>
+                    </div>
+                </div>
+            
+            
+            
+                <!-- Add more items similarly -->
+            </div>
+        </div>
+    </div>
+    
+     
+
+    <div>
+        <img class="firstpics relative top-10" src="/images/jj/diamonds.webp" alt="Diamonds">
+        <p class=" mabs text-black text-center text-9xl font-tailfoot "> 
+            Best GIA certified diamond worldwide
+        </p>
+
+        
+    </div>
+    <div class="mt-11"></div>
+        <p class="text-center    btn">Collections</p>
+
+        <img   class="rounded-xl w-2/6 h-2/4   relative bottom-35 left-7"   src="../images/jj/Screenshot 2024-10-18 at 09.35.51.png">
+        <P class="parah  text-7xl font-bold">Men's Collection</P>
+        <p class="parah">Stand out of the crowd with our natural <br>princess cut diamond chains.</p>
+        
+        <button class="bg-red-500 parah p-2 pl-5 pr-5 rounded-xl font-sans text-white text-base flex items-center space-x-2 hover:translate-x-[-10px] transition-transform duration-300 ease-in-out">
+            <span>shop now</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 " fill="currentColor" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
+            </svg>
+        </button>
+        
+            
+        </div>
+        <div>
+                <img  class="rounded-xl w-2/6 h-2/4  raps"   src="../images/jj/47e3947390d2b951245651e0fef851e0.jpeg">
+                <p class="text-7xl font-bold parahs">Women Collection</p>
+                <div>
+                    <p class="parahs relative right-5">Billionaiire embeled cuts</p>
+                    </div>
+                
+                    <button class="bg-red-500 parah p-2 pl-3 pr-5 rounded-xl font-sans text-white text-base flex items-center space-x-2 hover:translate-x-[-10px] transition-transform duration-300 ease-in-out ">
+                        <span>shop now</span>
+                        <svg xmlns="http://www.w3.org/2000/svg"  class=" w-6 h-6" fill="currentColor"  viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 1 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                                </svg>
+                    </button>
+                </div>
+        
+        </div>
+       
+    </div>
+   
+       
+    <div>
+   
+    
+        <p class="relative bottom-48    flex justify-center text-4xl">shop by catergory</p>
+        <div>
+            <button id="prevBtn" class="  arrow left-arrow">&lt;</button>
+            <div class="slider-container">
+                
+                <div class="slider">
+                        <div class="image-container">
+                        <img class="ss" src="/images/0e8a2997__77255.original.jpg" alt="Jewelry Set">
+                        <div class="overlay-text">Rings</div>
+                    </div>
+        
+                    <div class="image-container">
+                        <img class="ss" src="/images/0E8A4313__51035.jpeg" alt="Necklace">
+                        <div class="overlay-text">Pendant</div>
+                    </div>
+                </div>
+              
+                
+            </div>   
+            <button id="nextBtn" class="arrow right-arrow">&gt;</button>
+          
+         </div>
+     </div>
+    <div>
+        <img src="../images/jj/A1LR0320-1.jpeg">
+    </div>
+
+       
+    
+    
+    
+    
+    <script type="module"   src="./index.js"></script>
+</body>
+
+</html>
