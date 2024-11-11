@@ -1,0 +1,21 @@
+ export const secImage = [
+    {
+        image:"../images/jj/130-00063.jpeg"
+    },
+    {
+        image:"../images/jj/A1LR0320-1.jpeg"
+    },
+    {
+       image:"../images/jj/KS37-18K.jpeg" 
+    },
+    {
+        image:"../images/jj/ring-10k-white-solid-gold-mens-diamond-ring-with-black-diamonds-6-50-ctw-8639496519739_1280x.jpeg"
+    },
+    {
+        image:"../images/jj/0001.jpeg"
+    },{
+        image:"../images/jj/lm048_f_1457x.jpeg"
+    },{
+        image:"../images/jj/1_ZEvCn9ZI47Mekb6mZm3DuQ.png"
+    }
+]

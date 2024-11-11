@@ -9,7 +9,7 @@
 
     <!-- <link rel="stylesheet" href="../src/output.css"/> -->
 </head>
-<body> 
+<body class="m-0 p-0"> 
     <div class="bg-black fixed top-0 w-full z-50 p-4">
         <div class="">
             <h1 class="text-4xl font-tailfont text-white mt-2 flex justify-center">
@@ -167,36 +167,48 @@
     </div>
     <div class="mt-11"></div>
         <p class="text-center    btn">Collections</p>
-
-        <img   class="rounded-xl w-2/6 h-2/4   relative bottom-35 left-7"   src="../images/jj/Screenshot 2024-10-18 at 09.35.51.png">
-        <P class="parah  text-7xl font-bold">Men's Collection</P>
-        <p class="parah">Stand out of the crowd with our natural <br>princess cut diamond chains.</p>
+      <div class="flex items-center space-x-4">
+        <img   class="rounded-xl   pics relative bottom-35 left-"   src="../images/jj/Screenshot 2024-10-18 at 09.35.51.png">
+        <div class="flex flex-col space-y-2 real">
+            <!-- Stacking each text element vertically with some spacing -->
+            <p class="parah text-7xl font-bold">Men's Collection</p>
+            <p class="parah text-base">Stand out of the crowd with our natural <br> princess cut diamond chains.</p>
+            
+            <button class="bg-red-500 bt m-0 rounded-xl font-sans pl-2  text-white  flex items-center hover:translate-x-[-10px] transition-transform duration-300 ease-in-out">
+                <span>shop now</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-10 " fill="currentColor" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
+                </svg>
+            </button>
+        </div>
         
-        <button class="bg-red-500 parah p-2 pl-5 pr-5 rounded-xl font-sans text-white text-base flex items-center space-x-2 hover:translate-x-[-10px] transition-transform duration-300 ease-in-out">
-            <span>shop now</span>
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 " fill="currentColor" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
-            </svg>
-        </button>
+      </div>
         
             
-        </div>
-        <div>
-                <img  class="rounded-xl w-2/6 h-2/4  raps"   src="../images/jj/47e3947390d2b951245651e0fef851e0.jpeg">
-                <p class="text-7xl font-bold parahs">Women Collection</p>
-                <div>
-                    <p class="parahs relative right-5">Billionaiire embeled cuts</p>
-                    </div>
+ </div>
+    <div>
+                <img  class="rounded-xl  picss   "   src="../images/jj/47e3947390d2b951245651e0fef851e0.jpeg">
+                <div class="flex items-start space-x-4">
+                    <!-- Left side (Image) -->
+                  
+                    <!-- Right side: Text and button stacked vertically -->
+                    <div class="flex flex-col space-y-4 real relative bottom-52 left-40">
+                        <p class="text-7xl font-bold">Women Collection</p>
+                        <p class=" posi">Billionaire embellished cuts</p>
                 
-                    <button class="bg-red-500 parah p-2 pl-3 pr-5 rounded-xl font-sans text-white text-base flex items-center space-x-2 hover:translate-x-[-10px] transition-transform duration-300 ease-in-out ">
-                        <span>shop now</span>
-                        <svg xmlns="http://www.w3.org/2000/svg"  class=" w-6 h-6" fill="currentColor"  viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 1 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
-                                </svg>
-                    </button>
+                        <button class="bg-red-500 bt  possi rounded-xl font-sans text-white text-base flex items-center space-x-2 hover:translate-x-[-10px] transition-transform duration-300 ease-in-out">
+                            <span>shop now</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 1 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                            </svg>
+                        </button>
+                    </div>
                 </div>
-        
-        </div>
+                
+               
+                
+         
+        </div> 
        
     </div>
    
@@ -204,7 +216,7 @@
     <div>
    
     
-        <p class="relative bottom-48    flex justify-center text-4xl">shop by catergory</p>
+        <p class="relative bottom-12 real    flex justify-center text-6xl">shop by catergory</p>
         <div>
             <button id="prevBtn" class="  arrow left-arrow">&lt;</button>
             <div class="slider-container">
@@ -223,18 +235,177 @@
               
                 
             </div>   
-            <button id="nextBtn" class="arrow right-arrow">&gt;</button>
+            <button id="nextBtn" class="arrow right-arrow relative bottom-40">&gt;</button>
+
+            
           
          </div>
      </div>
-    <div>
-        <img src="../images/jj/A1LR0320-1.jpeg">
-    </div>
+    <!-- <div>
+        <img src="../images/jj/A1LR0320-1.jpeg" class>
+    </div> -->
+ <div>
+    <div class="flex items-center space-x-4 relative bottom-10">
+        <img   class="rounded-xl   pics relative bottom-35 left-"   src="../images/jj/Untitled design (27).jpeg">
+        <div class="flex flex-col space-y-2 real">
+            <!-- Stacking each text element vertically with some spacing -->
+            <p class="parah text-7xl font-bold">Rings</p>
+            <p class="parah text-base">Stand out of the crowd with our natural <br> princess cut diamond chains.</p>
+            
+            <button class="bg-red-500 bt m-0 rounded-xl font-sans pl-2  text-white  flex items-center hover:translate-x-[-10px] transition-transform duration-300 ease-in-out">
+                <span>shop now</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-10 " fill="currentColor" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
+                </svg>
+            </button>
+        </div>
+ </div>
+  <div>
+    
 
+ </div>
+ <div>
+    <img  class="rounded-xl  picss   "   src="../images/jj/Rolex_Datejust_ladies_20JM9932-Edit-1.jpeg">
+    <div class="flex items-start space-x-4">
+        <!-- Left side (Image) -->
+      
+        <!-- Right side: Text and button stacked vertically -->
+        <div class="flex flex-col space-y-4 real relative bottom-52 left-40">
+            <p class="text-7xl font-bold pot">Watches</p>
+            <p class=" ash">Billionaire embellished cuts</p>
+    
+            
+        </div>
+        <button class="bg-red-500 text-white pl-4 pr-4 p-2 rounded-xl  flex  hover:translate-x-[-10px] transition-transform duration-300 ease-in-out relative left-80 bottom-24">
+            shop now
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 ml-2 mt-1" fill="currentColor" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 1 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+            </svg>
+        </button>
+    </div>
+    <!-- <div class="flex items-center space-x-4 relative bottom-10"></div> -->
+        <img   class="rounded-xl   picsx" src="../images/jj/1806219683402223616.jpeg">
+        <div class="flex flex-col space-y-2 real">
+            <!-- Stacking each text element vertically with some spacing -->
+            <p class="parah text-7xl font-bold position">pendant</p>
+            <p class="parah text-base position">Stand out of the crowd with our natural <br> princess cut diamond chains.</p>
+            
+            <button class="bg-red-500 bt m-0 rounded-xl font-sans pl-2  text-white  flex items-center hover:translate-x-[-10px] transition-transform duration-300 ease-in-out positions">
+                <span>shop now</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-10 " fill="currentColor" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
+                </svg>
+            </button>
+            
+        </div>
+        
+ </div>
+ <div>
+    <img  class="rounded-xl  picss   relative bottom-64"   src="../images/jj/s-l1200.jpeg">
+    <div class="flex items-start space-x-4">
+        <!-- Left side (Image) -->
+      
+        <!-- Right side: Text and button stacked vertically -->
+        <div class="flex flex-col space-y-4 real relative bottom-52 left-40">
+            <p class="text-7xl font-bold pots">Cuban links</p>
+            <p class=" ash potss">Billionaire embellished cuts</p>
+    
+            
+        </div>
+        <button class="bg-red-500 text-white pl-4 pr-4 p-2  btns rounded-xl  flex  hover:translate-x-[-10px] transition-transform duration-300 ease-in-out  potsss">
+            shop now
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 ml-2 mt-1" fill="currentColor" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 1 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+            </svg>
+        </button>
+    </div>
+   
+    
+
+</div> 
+<img   class="rounded-xl   picsx  relative bottom-80" src="../images/jj/Graff-Classic-Graff-Round-Diamond-Necklace-RGN541-Carousel-4.jpeg">
+<div class="flex flex-col space-y-2 real">
+    <!-- Stacking each text element vertically with some spacing -->
+    <p class="parah text-7xl font-bold positionss">Necklace</p>
+    <p class="parah text-base positionss ">Stand out of the crowd with our natural <br> princess cut diamond chains.</p>
+    
+    <button class="bg-red-500 bt m-0 rounded-xl font-sans pl-2  text-white positionss flex items-center hover:translate-x-[-10px] transition-transform duration-300 ease-in-out positions">
+        <span>shop now</span>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-10 " fill="currentColor" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
+        </svg>
+    </button>
+    
+</div>
+
+</div>
+
+    <img  class="rounded-xl  picss  game"   src="../images/jj/Diamond-Earring-37.jpeg">
+    <div class="flex items-start space-x-4">
+        <!-- Left side (Image) -->
+      
+        <!-- Right side: Text and button stacked vertically -->
+        <div class="flex flex-col space-y-4 real relative bottom-52 left-40">
+            <p class="text-7xl font-bold pots relative xx">Earrings</p>
+            <p class=" ash potss xxx">Billionaire embellished cuts</p>
+    
+            
+        </div>
+        <button class="bg-red-500 text-white pl-4 pr-4 p-2 rounded-xl  btna flex  hover:translate-x-[-10px] transition-transform duration-300 ease-in-out  ">
+            shop now
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 ml-2 mt-1" fill="currentColor" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 1 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+            </svg>
+        </button>
+    </div>
+    <div class="bg-black p-10 palms">
+        <h1 class=" flex justify-center text-5xl btn relative top-32 ml-36 text-white">CUSTOM DESIGN JEWELRY </h1> 
+        <p class=" text-white bb ">Stand out from the crowd with our custom jewelry,<br> made with attention to detail and passion.</p> 
+        
+        <img  class="  w-96"  src="../images/jj/Screenshot 2024-11-07 at 03.13.17.png">
+        
+        <button class="text-white bg-red-500 p-1 relative fond left-96 rounded-xl hover:translate-x-[-10px] transition-transform duration-300 ease-in-out ml-10 bottom-48">
+            Start designing now
+            
+        </button>
+        
+        
+        
+        
+        
+    </div>
+    <p class="fond text-6xl flex justify-center relative bottom-96">1 OF 1</p>
+    <div>
+        <div class="w-96 flex space-x-2 relative bottom-80 left-28">
+            
+            <img  class="image-containers"     src="../images/jj/fossils-necklace-louis-vuitton-deep-time.jpg__760x0_q75_crop-scale_subsampling-2_upscale-false.jpg">
+            <img class="image-containers"  src="../images/jj/seeds-necklace-louis-vuitton-deep-time.jpg__1536x0_q75_crop-scale_subsampling-2_upscale-false.jpg">
+            <img  class="image-containers"      src="../images/jj/NCNK103.jpeg">
+           
+                
+        </div>
+        <div class="w-96 flex space-x-2 relative bottom-80 left-28 mt-6 h-96">
+            <img  class="image-containers"  src="../images/jj/HD-wallpaper-luxurious-necklace-green-eyes-beautiful-woman-lips-diamonds-alluring-beauty-face-eyes.jpeg">
+            <img   class="image-containers"   src="../images/jj/unnamed.jpeg">
+            <img   class="image-containers"   src="../images/jj/atours-mysterieux-ruby-and-diamond-necklace-van-cleef-and-arpels-legend-of-diamonds-on-model-.jpg__1536x0_q75_crop-scale_subsampling-2_upscale-false.jpg">
+        </div>
+            
        
-    
-    
-    
+    </div>
+    <div class=" relative  bottom-56">
+        <h1 class="flex justify-center fond text-6xl">Visit Rita K stones</h1>
+        <div>
+            <p class="flex justify-center fond text-xl  text-center ">Our flagship showroom is located in Atlanta, and Icebox boutiques located in <br> Saks Fifth Avenue in Miami Brickell and Atlanta.
+            </p>
+        </div>
+        
+    </div>
+    <div class="pall-container flex space-x-20 relative bottom-28 left-72"></div> <!-- Outer container for generated .pall elements -->
+
+   
+
+
+
     
     <script type="module"   src="./index.js"></script>
 </body>

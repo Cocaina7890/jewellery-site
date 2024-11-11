@@ -1,3 +1,6 @@
+import { visit } from "../script.js/visit.js";
+import { thirdpics } from "../script.js/3rdimage.js";
+import { secImage } from "../script.js/2ndimage.js";
 import {img} from "../script.js/image.js";
 import{cart} from '../script.js/cart.js'
 
@@ -28,19 +31,44 @@ img.forEach((photo) => {
       `
     
 });
+
+
+
 document.querySelector('.slider').innerHTML = imageset;
 
- const firstbutton =    document.querySelectorAll('.raps')
- .forEach(button => {
-    button.addEventListener('click', () => {
-          console.log(button.dataset);
+console.log('deba')
+let imageset2 ='';
+secImage.forEach((simage)=>{
+   imageset2 += `<div class="">
+            <img class="pip" src="${simage.image}">
+            <p class="pills">IN STOCK</p>
+        </div>
+ 
+    `
+});
+// document.querySelector('.operate').innerHTML = imageset2
 
-        //   cart.forEach(item =>{
-        //     if(photoName === item.photoName)
-        //   })
+
+//  const firstbutton =    document.querySelectorAll('.raps')
+//  .forEach(button => {
+//     button.addEventListener('click', () => {
+//           console.log(button.dataset);
+
+//         //   cart.forEach(item =>{
+//         //     if(photoName === item.photoName)
+//         //   })
        
-    });
- });
+//     });
+//  });
+  
+//  let imageset3 ='';
+//   thirdpics.forEach((timage)=>{
+//     imageset3 +=`<div class="operate flex">
+//                 <img class="pip" src="${timage.image}">
+//                 <p class="pills">IN STOCK</p>
+//             </div>
+//      `
+//   })  
 
 
 
@@ -85,22 +113,17 @@ function slideToPrevImage() {
 
 nextBtn.addEventListener('click', slideToNextImage);
 prevBtn.addEventListener('click', slideToPrevImage);
-const dropdownToggles = document.querySelectorAll('[id$="DropdownToggle"]');
-    const dropdownMenus = document.querySelectorAll('[id$="DropdownMenu"]');
 
-    dropdownToggles.forEach((toggle, index) => {
-        toggle.addEventListener('click', () => {
-            dropdownMenus[index].classList.toggle('opacity-0');
-            dropdownMenus[index].classList.toggle('invisible');
-        });
-    });
 
-    // Optional: Close the dropdown if clicking outside of it
-    document.addEventListener('click', (event) => {
-        dropdownMenus.forEach(menu => {
-            if (!menu.previousElementSibling.contains(event.target) && !menu.contains(event.target)) {
-                menu.classList.add('opacity-0');
-                menu.classList.add('invisible');
-            }
-        });
-    });
+const overlayText = "Sample Text";
+const imageContainers = document.querySelectorAll('.image-containers');
+imageContainers.forEach(container => {
+    
+    const textElement = document.createElement('span');
+    textElement.classList.add('overlay-text');
+    textElement.textContent = overlayText;
+    
+    
+    container.appendChild(textElement);
+});
+
